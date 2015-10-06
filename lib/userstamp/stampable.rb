@@ -47,7 +47,8 @@ module Ddb #:nodoc:
           # Defaults to :deleted_by when compatibility mode is on
           class_attribute  :deleter_attribute
 
-          self.stampable
+          # Not all models in Enterprise have userstamps
+          # self.stampable
         end
       end
 
